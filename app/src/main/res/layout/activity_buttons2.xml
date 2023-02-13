@@ -28,7 +28,7 @@
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hola"
+                android:text="LILLL"
                 app:chipIcon="@drawable/ic_hello"
                 style="@style/chEntry"/>
             <com.google.android.material.chip.Chip
@@ -51,6 +51,12 @@
                 android:layout_height="wrap_content"
                 android:text="konichiwa"
                 style="@style/chEntry"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jjejejej"
+                style="@style/chEntry"/>
+
         </com.google.android.material.chip.ChipGroup>
     </LinearLayout>
 </ScrollView>
