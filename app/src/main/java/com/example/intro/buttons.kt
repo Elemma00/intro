@@ -3,6 +3,8 @@ package com.example.intro
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.chip.Chip
@@ -32,7 +34,24 @@ class buttons : AppCompatActivity() {
             }
         }
 
-
+        var rgVacaciones = findViewById<RadioGroup>(R.id.rgVacaciones)
+        var rb = rgVacaciones.getChildAt(1) as RadioButton
+        rgVacaciones.check(rb.id)
 
     }
+
+    fun onRadioButtonClicked(view: View){
+        if (view is RadioButton) {
+            var checked = view.isChecked
+            when(view.id){
+               R.id.rbPlaya -> {
+                   if(checked) Toast.makeText(this,"Vamos a la playa",Toast.LENGTH_SHORT).show()
+               }
+               R.id.rbMontaña -> {
+                   if(checked) Toast.makeText(this,"vamos a la montaña",Toast.LENGTH_SHORT).show()
+               }
+           }
+        }
+    }
+
 }
